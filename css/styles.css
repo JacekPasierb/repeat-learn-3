@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: rgba(33, 33, 33, 1);
+  margin: 0 auto;
 }
 :root {
   --color-text-one: rgba(33, 150, 243, 1);
@@ -14,13 +15,37 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;;
+  padding: 0 15px;
+}
+.section {
+    padding-block: 94px;
+}
+.background-head .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+ul,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    margin:0;
+    padding: 0;
+}
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
 }
 .nav-style {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  flex-grow: 1;
 }
 
 .contact-style {
@@ -39,9 +64,14 @@ body {
   text-transform: uppercase;
 
   color: var(--color-text-two);
+  text-align: center;
+  width:696px;
+  height:120px;
 }
 .background-head {
   background-color: var(--color-background-one);
+  padding-block: 200px;
+  margin: 0 auto;
 }
 .button-style-head {
   font-weight: bold;
@@ -53,6 +83,16 @@ body {
 }
 .button-background-head {
   background-color: var(--color-background-three);
+}
+.article {
+    display: flex;
+    gap:30px;
+    padding-bottom: 94px;
+}
+.article li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .article h3 {
   font-weight: bold;
@@ -117,6 +157,9 @@ body {
   font-weight: normal;
   color: rgba(33, 150, 243, 1);
 }
+.logo-margin {
+    margin: 24px 93px 25px 0px;
+}
 a:hover,
 a:focus {
   color: var(--color-text-one);
@@ -149,4 +192,20 @@ button:focus {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--color-text-three);
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.nav-style .flex {
+    display: flex;
+    gap: 46px;
+}
+.contact-style .flex {
+    display: flex;
+    gap: 50px;
+}
+.flex-image {
+    display: flex;
+    gap: 17px;
 }
